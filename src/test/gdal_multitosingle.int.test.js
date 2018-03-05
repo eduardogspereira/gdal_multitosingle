@@ -38,10 +38,3 @@ describe('gdalMultiToSingle', () => {
     expect(getFeatures(simplelinestrings).features.count()).toBe(9);
   });
 });
-
-// const simplepoints = gdalMultiToSingle.processData(multipoints);
-
-// console.log(simplepoints);
-
-// outputName = `output_${uuid().replace(/-/g, '')}.shp`,
-// outputFormat = 'ESRI Shapefile',

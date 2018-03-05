@@ -28,7 +28,7 @@ const outputPath = gdalMultiToSingle.processData(<inputFeatures>, <outputName>, 
 const gdalMultiToSingle = require('gdalmultitosingle');
 const gdal = require('gdal');
 
-const getFeatures = shapefile => gdal.open(shapefile).layers.get(0);
+const getFeatures = dataset => gdal.open(dataset).layers.get(0);
 
 const inputLayer = getFeatures('path/to/inputData.geojson');
 
